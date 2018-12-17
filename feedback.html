@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src='feedback.js'></script>
     <title>WHS SGA</title>
 </head>
 <body>
@@ -22,13 +24,13 @@
               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Events</a>
+              <a class="nav-link" href="events.html">Events</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="about.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Political Parties</a>
+              <a class="nav-link" href="party1.html">Political Parties</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Ram Report</a>
@@ -36,6 +38,67 @@
           </ul>
         </div>
       </nav>
-
+      <div class="jumbotron">
+        <h1 class="display-4">Welcome to the Daily Ram Reports!</h1>
+        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique temporibus omnis accusantium laudantium consectetur corporis esse, maiores doloremque, rerum cumque fugiat placeat dolorum quibusdam pariatur excepturi saepe commodi explicabo vero?</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+      <div class="alert alert-primary" role="alert">
+        A simple primary alert with <a href="#" class="alert-link">Events</a>. Give it a click if you like.
+      </div>
+      <div class="alert alert-secondary" role="alert">
+        A simple secondary alert with <a href="#" class="alert-link">About Us</a>. Give it a click if you like.
+      </div>
+      <div class="alert alert-success" role="alert">
+        A simple success alert with <a href="#" class="alert-link">Political Parties</a>. Give it a click if you like.
+      </div>
+      <form class="needs-validation" novalidate>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationCustom01">First name</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationCustom02">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationCustom05">Grad Level</label>
+            <input type="text" class="form-control" id="validationCustom05" placeholder="" required>
+            <div class="invalid-feedback">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">What we need to fix</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </form>
+      
+      
 </body>
 </html>
